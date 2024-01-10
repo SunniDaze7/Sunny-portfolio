@@ -1,11 +1,11 @@
 # Final Portfolio
 
-This repository is a collection of some of my key learnings during my XXXX - XXXX apprenticeship at COMPANY_HERE.
+This repository is a collection of some of my key learnings during my 2023 - 2024 apprenticeship at HP.
 
 ## Overview of Apprenticeship
-- **Host Company**:
-- **Duration**:
-- **Link to Portfolio Website**:
+- **Host Company**: HP
+- **Duration**: May 2023-August 2024
+- **Link to Portfolio Website**: sunnidaze7.github.io
 
 ## Portfolio Introduction
 - Who you are
