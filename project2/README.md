@@ -6,7 +6,7 @@ The Task Manager application is a simple backend task storage app where users lo
 ### Situation
 When displaying the application, the default is that you are "logged out" and a small message showing "Logged out" is displayed. By navigating to the apps URl/login, a user interface from OAuth is shown where are user profiles are handled. The user can log in and the tasks associated with that user are displayed. 
 
-### (Task) Describe the overall structure of your application and the design process prior to building the program
+### Task
 So before building, we all discussed how we would store tasks and how the app would be accessed. We decided that the tasks would be stored in an API and users could access their own tasks(their "API) through an authentication service. When developing the app we decided it would be completely backend focused. 
 
 ### Action
