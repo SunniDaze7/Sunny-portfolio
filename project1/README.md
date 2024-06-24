@@ -25,9 +25,8 @@ To create the app, I used a basic react app template(create-react-app). I utiliz
 
 ## Competencies
 ### JF 2.5 - Can implement a responsive User Interface
--I have demonstrated this competency on the job directly through the application I am responsible for. I am assigned in creating new functionalies for users to interact with on a public facing site.
-- Through this project, I was able to display this competency by creating a site that can be interacted with simply and effectively. All interactive aspects of the projects work as intended.
-- To accomplish this goal, I linked an Oracle database to the application with a DB file. This allowed for when a user selects to see backlog count, the code responds with the requested information.
+- I have demonstrated this competency on the job directly through the application I am responsible for. I am assigned in creating new functionalies for users to interact with on a public facing site.
+- Through this project, I was able to display this competency by creating a site that can be interacted with simply and effectively. All interactive aspects of the projects work as intended. To accomplish this goal, I linked an Oracle database to the application with a DB file. This allowed for when a user selects to see backlog count, the code responds with the requested information.
 - This project helped me understand the importance of simplistic UI design for some projects. A detailed design is not always required depending on the use case. I was also able to display how I can use this competency to provide impact to my team creating efficiency.
 
 ### JF 4.6 - Can test code and analyze results to correct errors found using unit testing
