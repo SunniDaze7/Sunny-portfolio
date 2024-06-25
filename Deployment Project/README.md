@@ -29,6 +29,6 @@ Through this project, I was able to create a feature for an application on the j
 - Emphasize the results of this action for your team or your learning. 
 - Connect the competentcy to this project
 
-#Challenges
+# Challenges
 - Integration: I ran into challenges integrating a new feature into already existing code. Luckily I was able to use already existing features to understand the organization of files and use the same logic in the new features.
 - Problem solving: Another obstacle I overcame were small errors that were causing the entire form to not work correctly. I decided to go through the file logic in order until I was able to fins where the error was taking place. I was also able to use the error messages to find the exact area that needed revision.
