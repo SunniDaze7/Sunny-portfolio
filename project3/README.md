@@ -28,3 +28,6 @@ This application is a weather app where users can see their wether local current
 - Summarize the actions you took to accomplish the goal. 
 - Emphasize the results of this action for your team or your learning. 
 - Connect the competentcy to this project
+
+#Challenges
+-Unlike our task manager group project, this project required us to create a front and backend, which made collaboration more complex. To over come this, we once again utlized github actions, except this time we made our job roles/tasks more detailed and numerous for clarity. This also required more collaboration time tom ake sure all pieces fit together smoothly and there was someone to review merges to our main branch. In this case instead of meeting altogether each time, the two or three team members who needed to collaborate to fit their code pieces together met seperately to avoid delay in completing cetain parts. We also did some parts in a specific order to avoid complications in the merging process so that one member would not have to change major pieces of code they've already worked on.
