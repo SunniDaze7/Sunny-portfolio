@@ -1,4 +1,4 @@
-## Front End Project
+## Hackathon Project - Backlog Checker
 
 ### High-level overview of the project's purpose
 The Backlog checker app creates an efficient way to get the backlog message count for one of my team's suply chain application at the press of a button. 
@@ -33,3 +33,6 @@ To create the app, I used a basic react app template(create-react-app). I utiliz
 - I have demonstrated this competency on the job through the application I am responsible for. There are several tests set up within an Apptest.js file that run before code is deployed. I have edited that code to have new tests when I edit the site for new functionality.
 - Through this project I demonstrated this competency by creating a test file(App.test.js). In this file, several tests were created to check that key UI is being displayed correctly (such as the buttons and text)
 - This competency helped me to understand the importance of creating effective tests and how they can help create controls in code allowing you to catch erros quickly.
+
+## Challenges
+- During this project, I faaced challenges integrating an outside database from Oracle into my code. I was not familiar with the technology and wasn't sure where to begin. To overcome this challenge I turned to both Oracle and NodeJS documentation. In reading this docmentation, I found that a DB file could be created and I can plug in my log in info for Oracle into this file as well as the SQL query needed to accessd the backlog count from the data. I learned that there is usually documentation for problems I run into and when reading carefullyand some problem solving, I can solve the issue.
