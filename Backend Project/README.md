@@ -16,12 +16,15 @@ So in developing the application after planning, we created a few example APIS a
 Here are some images of our project.
 
 ![OAuth](../images/tasklogin.png)
+
 Pictured above is where our users could log into their account to view their stored tasks.
 
 ![Users](../images/taskusers.png)
+
 Pictured above is our stored users when navigating to /users
 
 ![tasks](../images/tasks.png)
+
 Pictured above is a user's stored tasks when navigating to /tasks
 
 ## Technologies

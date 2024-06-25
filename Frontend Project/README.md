@@ -12,6 +12,9 @@ This application is a weather app where users can see their wether local current
 
 
 ### Result
+Here is a picture of our deployed project.
+
+![app](../images/Weatherapp.png)
 
 ## Technologies
 - React
