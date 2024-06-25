@@ -1,14 +1,7 @@
 
 # MSP Form -Project Outline
 
-  *this project is an outline of work I copleted on the job, thought the repo is not available to view, I have included a complete outline of the projet below.*
-
-
-## Summary of Project
-
-The MSP Credential Form is a formal way for HP Suppliers to request a security credential to log into supplier tools on a website called HP Supplier Portal. Once a supplier has filled out the form, an email is sent to the corresponding team based on the information given.
-This Application was created as a means of solving an issue where some companies who were not yet verified with HP could request verification to our Indirect and Direct Procurement teams.
-
+  *This project is an outline of work I completed on the job, thought the repo is not available to view, I have included a complete outline of the projet below.*
 
 
 ### The Form
