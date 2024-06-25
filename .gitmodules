@@ -1,0 +1,12 @@
+[submodule "Task-manager"]
+	path = Task-manager
+	url = https://github.com/kamjohn777/Task-manager.git
+[submodule "Backend Project/Task-manager"]
+	path = Backend Project/Task-manager
+	url = https://github.com/kamjohn777/Task-manager.git
+[submodule "Frontend Project/frontend-weather-app"]
+	path = Frontend Project/frontend-weather-app
+	url = https://github.com/multiverse-hp/frontend-weather-app.git
+[submodule "Hackathon Project/backlogChecker1"]
+	path = Hackathon Project/backlogChecker1
+	url = https://github.com/SunniDaze7/backlogChecker1.git
