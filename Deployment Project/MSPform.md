@@ -28,37 +28,60 @@ B. Visual Components
 -	The input fields: This is where a user will enter needed information. The components were easily to implement using code snippets from veneer libraries as shown below
 
        `<TextBox
+
                 defaultValue=”Value”
+
                 label=”label”
+
                 placeholder=”placeholder” 
+
                 />`
 
 -	The checkboxes: The checkboxes represent different supplier tools a supplier may be requesting access for. These are also easily implemented from veneer libraries as shown below
   
+
                 `<Checkbox
+
                  defaultChecked
+
                 id="checkbox"
+
                 label="Label"
                 />`
+
 
 -	The dropdown menu: The dropdown menu is for suppliers to choose what service they are providing to HP to determine what team handles their request. Also styled by veneer
 
     `() => {
+               
                 const items = [
                 { value: 1, label: 'Item 1' }
+
                 ];
+
         const [value, setValue] = React.useState([]);
+
         const [options, setOptions] = React.useState(items);
-        const onChange = (selectedOption) => setValue([selectedOption.value]);
+
+        const onChange = (selectedOption) => setValue
+        ([selectedOption.value]);
+
         const onClear = () => setValue([]);
 }
     return(
+
         <Select
+
             options={options}
+
             id="select-usage"
+
             label="Select"
+
             onChange={onChange}
+
             value={value}
+
             />`
 
 ### BACK END
@@ -84,10 +107,16 @@ We also need to get register on google reCAPTCHA website and give information ab
 
 
 `<ReCAPTCHA 
+
           sitekey={siteKey} // produced by google ReCAPTCHA 
+
           onVerify={handleChangeCaptcha}//calling function 
-          ref={captchaRef} // giving reference to reset after some actions 
+
+          ref={captchaRef} // giving reference to reset after 
+some actions 
+
         /> `
+
 
 Above, the site key is stored in variable and passed to site Key property. 
 
@@ -99,10 +128,12 @@ D. Email
 In the application, the form calls the sendMail service (a JavaScript function). When the form calls this method, it passes the payload(form info) to that service.  
  
 `const reqObj = {} // data form collects 
-             
+
     sendMail({ data: reqObj }) 
+
         .then(result => {})// if call get successful 
-    .catch(err => {}) // if call get fail` 
+
+    .catch(err => {}) // if call get fail `
  
 
 
@@ -112,15 +143,20 @@ Validation in frontend is needed for user data input restrictions and checking a
 In the application, form validation is implemented though JavaScript.  
  
  
-  `const [errors, setErrors] = useState({});` 
+  `const [errors, setErrors] = useState({}); `
  
 Above code is to declare state which will store errors in one JS Object. 
     
-   `const err = {}; 
+
+`  const err = {}; 
  
     if (name.trim() === '') err.name = 'Please enter name'; 
+
     if (email.trim() === '') err.email = 'Please enter email'; 
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email.trim())) err.email = 'Please enter valid email id'; 
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test
+(email.trim())) err.email = 'Please enter valid email id'; 
+
    setErrors(err); `
  
 
@@ -135,14 +171,23 @@ POST: /verify_token – this route accepts site key and captures secret key from
 G. Folder Structure
 
 Server.js 
+
 /services
--MSPcredentialFormService.js	
+
+-MSPcredentialFormService.js
+
 -mailService4.js
+
 -recaptchaservice.js 
+
 /validator
+
 -MSPcredentialFormValidation.js 
+
 Package.json 
+
 Package-lock.json 
+
 
 
 ### DEPLOYMENT
@@ -170,52 +215,4 @@ Rm -f build.zip (delete the zip file once deployed)
 
 5.	Lastly both node and apache are restarted. Apache is restarted on the command line and Node is restarted via AWS Cloud dashboard by starting the instance again.
  
-
-# MSP Form -Project Outline
-
-### FRONT END
-
-A. Key Libraries 
-
-- React 
-- Veneer for styling
-
-B. Visual Components
-
-- The input fields: This is where a user will enter needed information. The components were easily to implement using code snippets from veneer libraries as shown below
-
-       `<TextBox
-    defaultValue=”Value”
-    label=”label”
-    placeholder=”placeholder” 
-    />`
-
-- The checkboxes: The checkboxes represent different supplier tools a supplier may be requesting access for. These are also easily implemented from veneer libraries as shown below
-  
-    `<Checkbox
-     defaultChecked
-    id="checkbox"
-    label="Label"
-    />`
-
-- The dropdown menu: The dropdown menu is for suppliers to choose what service they are providing to HP to determine what team handles their request. Also styled by veneer
-
-    `() => {
-    const items = [
-    { value: 1, label: 'Item 1' }
-    ];
-    const [value, setValue] = React.useState([]);
-    const [options, setOptions] = React.useState(items);
-    const onChange = (selectedOption) => setValue([selectedOption.value]);
-    const onClear = () => setValue([]);
-}
-  return(
-    <Select
-      options={options}
-      id="select-usage"
-      label="Select"
-      onChange={onChange}
-      value={value}
-      />`
-
 
