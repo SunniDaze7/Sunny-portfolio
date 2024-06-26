@@ -13,6 +13,8 @@ The Backlog checker app creates an efficient way to get the backlog message coun
 To create the app, I used a basic react app template(create-react-app). I utilized basic divs and navs to build simple components for each of the individual main 3 pages. The main page's main focus is UI; displaying a nav bar and button component using react. Upon the button press, a useState is changed from false to true which then begins the loading page. I also utilized an npm package to display a loading animation. To keep the lading animation displayed until the results are ready useEffect has a setTimeout to when the database returns data. Once the data is returned, the last page is displayed. On this page, again UI is the focus. The UI is similar to the main page with the number being displayed in a brief message. Then if the user wishes to return to the main page, the back button can be pressed which changes a useState variable from false to true, returning them to the main page.
 
 ### Result
+As a result, users navigating this site can save time by avoiding running a SQL query and instead pressing a butto nthat will load the query for them and give the result.
+
 Here are some images of the Backlog checker application.
 
 ![main](../images/backlog1.png)

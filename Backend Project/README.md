@@ -13,6 +13,9 @@ So before building, we all discussed how we would store tasks and how the app wo
 So in developing the application after planning, we created a few example APIS and set up CRUD fucntionality to access, read, and post information. Then the Oauth functionality was added and assigned to individual APIs so that certain tasks can only be accessed by certain users.
 
 ### Result
+
+As a result, the task manager is a backend application allowing users to authenticate through a log in, then view/store their tasks.
+
 Here are some images of our project.
 
 ![OAuth](../images/tasklogin.png)

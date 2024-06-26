@@ -13,6 +13,8 @@ Before building the program, I new it needed to fit seamlessly into the applicat
 On the front end, I used similar code to past forms, so I could review that code and edit it to this form's needs. I used Veneer to add other components neccessary such as checkboxes or choices. On the backend, I created validation files that checked the users answers on the form such as a valid email, ID or having no empty values. I also created connections to send emails to the proper business team depending on how the form was answered. For deployment, I used our applications main deployment tools; Putty, WinSCP, and AWS to first review the changes in our test environment then push into our production servers if all the changes were accepted.
 
 ### Result
+As a result, the users of this application can navigate to this form and fill out the form's requested information, then the info is sent to the appropriate email with the user's responses.
+
 Here is a picture of the deployed form on the website.
 
 ![form](../images/MSPform.png)
@@ -24,7 +26,7 @@ Here is a picture of the deployed form on the website.
 - CSS
 - Express
 - NodeJS
-- -Veneer
+- Veneer
 
 # Challenges
 - Integration: I ran into challenges integrating a new feature into already existing code. Luckily I was able to use already existing features to understand the organization of files and use the same logic in the new features.

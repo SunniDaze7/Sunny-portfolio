@@ -6,7 +6,7 @@
 
 ### The Form
  
-As pictured above, the user selects their “Reason to Contact” as “MSP Credential Company Enrollment” then give important information such as their name, email, company, etc. The blank labeled “Service Provided to HP” is what determines where the email copy of this form will be sent.
+The user selects their “Reason to Contact” as “MSP Credential Company Enrollment” then give important information such as their name, email, company, etc. The blank labeled “Service Provided to HP” is what determines where the email copy of this form will be sent.
 
 
 ### FRONT END
@@ -20,7 +20,8 @@ B. Visual Components
 
 -	The input fields: This is where a user will enter needed information. The components were easily to implement using code snippets from veneer libraries as shown below
 
-       `<TextBox
+```htm
+                <TextBox
 
                 defaultValue=”Value”
 
@@ -28,40 +29,44 @@ B. Visual Components
 
                 placeholder=”placeholder” 
 
-                />`
+                />
+```
 
 -	The checkboxes: The checkboxes represent different supplier tools a supplier may be requesting access for. These are also easily implemented from veneer libraries as shown below
   
 
-                `<Checkbox
+```htm
+                <Checkbox
 
                  defaultChecked
 
                 id="checkbox"
 
                 label="Label"
-                />`
+                />
+```
 
 
 -	The dropdown menu: The dropdown menu is for suppliers to choose what service they are providing to HP to determine what team handles their request. Also styled by veneer
 
-    `() => {
+```javascript
+                () => {
                
                 const items = [
                 { value: 1, label: 'Item 1' }
 
                 ];
 
-        const [value, setValue] = React.useState([]);
+            const [value, setValue] = React.useState([]);
 
-        const [options, setOptions] = React.useState(items);
+            const [options, setOptions] = React.useState(items);
 
-        const onChange = (selectedOption) => setValue
+            const onChange = (selectedOption) => setValue
         ([selectedOption.value]);
 
-        const onClear = () => setValue([]);
-}
-    return(
+            const onClear = () => setValue([]);}
+
+    return 
 
         <Select
 
@@ -75,7 +80,10 @@ B. Visual Components
 
             value={value}
 
-            />`
+            />
+```
+
+
 
 ### BACK END
 
@@ -99,16 +107,16 @@ We have implemented Google ReCAPTCHA in “Contact us” forms for avoiding spam
 We also need to get register on google reCAPTCHA website and give information about domains. Then google reCAPTCHA site produces site key and private key. Public key we need to pass to React component. private key we need to put on server to make further api call. 
 
 
-`<ReCAPTCHA 
+```htm
+            <ReCAPTCHA 
 
           sitekey={siteKey} // produced by google ReCAPTCHA 
 
           onVerify={handleChangeCaptcha}//calling function 
 
-          ref={captchaRef} // giving reference to reset after 
-some actions 
-
-        /> `
+          ref={captchaRef} // giving reference to reset after some actions 
+        /> 
+```
 
 
 Above, the site key is stored in variable and passed to site Key property. 
@@ -120,13 +128,15 @@ D. Email
 /send_mail – this route accepts users form info and process it though validator service and then sends email to team to help with user request.
 In the application, the form calls the sendMail service (a JavaScript function). When the form calls this method, it passes the payload(form info) to that service.  
  
-`const reqObj = {} // data form collects 
+```javascript
+const reqObj = {} // data form collects 
 
     sendMail({ data: reqObj }) 
 
-        .then(result => {})// if call get successful 
+        .then(result => {})// if call is successful 
 
-    .catch(err => {}) // if call get fail `
+    .catch(err => {}) // if call is failed
+```
  
 
 
@@ -140,8 +150,8 @@ In the application, form validation is implemented though JavaScript.
  
 Above code is to declare state which will store errors in one JS Object. 
     
-
-`  const err = {}; 
+```javascript
+const err = {}; 
  
     if (name.trim() === '') err.name = 'Please enter name'; 
 
@@ -150,7 +160,8 @@ Above code is to declare state which will store errors in one JS Object.
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test
 (email.trim())) err.email = 'Please enter valid email id'; 
 
-   setErrors(err); `
+   setErrors(err)
+```
  
 
 F. Routing 

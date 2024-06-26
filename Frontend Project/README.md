@@ -12,6 +12,8 @@ When opening our app, the browser will prompt you to allow "location sharing". I
 When designing this application, we looked for a proper API that would provide all the information we wanted to display within our app. It took some time and trial and error to figure out APIs that accomplished this goal without hidden fees. Once we found it, we began assigning tasks for who would create what and what parts we woud be in charge of. We decided on a basic one page react app that could display dynamically. We began with backend tasks first, connecting out API to the code. Then we created basic UI display to test that the needed information would show up. Once we neew we could diplay our API info, we designed more complex designs to create the site that is pictured in the results section.
 
 ### Result
+As a result, users of this application can navigate to our site and view theirs location's weather details and also select a button to view a random location's weather information.
+
 Here is a picture of our deployed project.
 
 ![app](../images/Weatherapp.png)
